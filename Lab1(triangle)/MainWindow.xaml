@@ -1,0 +1,42 @@
+﻿<Window x:Class="Lab1_triangle_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab1_triangle_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="550"  WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid >
+        <Grid.Background>
+            <ImageBrush ImageSource="/1679561247_bogatyr-club-p-fon-dlya-prezentatsii-belii-minimalizm-pin-3.png"/>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Вычисление вида треугольника" VerticalAlignment="Top" FontFamily="Kozuka Gothic Pro M" Foreground="#FF648274" FontSize="16" Width="426"/>
+        <TextBlock HorizontalAlignment="Left" Margin="196,42,0,0" TextWrapping="Wrap" Text="и координат его вершин" VerticalAlignment="Top" FontFamily="Kozuka Mincho Pro L" Width="253" Foreground="#FF648274"/>
+        <StackPanel Margin="150,131,149.6,187" RenderTransformOrigin="0.494,0.505">
+            <TextBlock TextWrapping="Wrap" Text="Длина стороны A" FontFamily="Sitka Display" Foreground="#FF648274"/>
+            <TextBox TextWrapping="Wrap"  Width="120" SelectionBrush="{x:Null}" BorderBrush="#FFC5B083" x:Name="storonaA" PreviewTextInput="TextBox_PreviewTextInput" Foreground="#FF4F7361" FontFamily="Sitka Display"/>
+            <TextBlock TextWrapping="Wrap" Text="Длина стороны B" FontFamily="Sitka Display" Foreground="#FF648274"/>
+            <TextBox TextWrapping="Wrap"  Width="120" SelectionBrush="{x:Null}" BorderBrush="#FFC5B083" x:Name="storonaB" PreviewTextInput="TextBox_PreviewTextInput" Foreground="#FF4F7361" FontFamily="Sitka Display"/>
+            <TextBlock TextWrapping="Wrap" Text="Длина стороны C" FontFamily="Sitka Display" Foreground="#FF648274"/>
+            <TextBox TextWrapping="Wrap"  Width="120" SelectionBrush="{x:Null}" BorderBrush="#FFC5B083" x:Name="storonaC" PreviewTextInput="TextBox_PreviewTextInput" Foreground="#FF4F7361" FontFamily="Sitka Display"/>
+        </StackPanel>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="322,199,0,0" VerticalAlignment="Top" Height="42" Width="42" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/free-icon-quill-4584472.png"/>
+            </Button.Background>
+        </Button>
+        <Canvas Margin="177,268,216.6,102.4" Width="100" Height="100" Background="White" x:Name="otrisovka"/>
+        <TextBox TextWrapping="Wrap" SelectionBrush="{x:Null}" BorderBrush="#FFC5B083" Margin="70,374,212,58.4" x:Name="TypeVivod" Foreground="#FF83A896" FontFamily="Sitka Display" FontSize="14"/>
+        <StackPanel Margin="348,308,22,52.4" RenderTransformOrigin="0.494,0.505">
+            <TextBlock TextWrapping="Wrap" Text="Координаты вершины A" FontFamily="Sitka Display" Foreground="#FF648274"/>
+            <TextBox TextWrapping="Wrap"  Width="120" SelectionBrush="{x:Null}" BorderBrush="#FFC5B083" x:Name="VivodA" Foreground="#FF4F7361" FontFamily="Sitka Display"/>
+            <TextBlock TextWrapping="Wrap" Text=" B" FontFamily="Sitka Display" Foreground="#FF648274"/>
+            <TextBox TextWrapping="Wrap"  Width="120" SelectionBrush="{x:Null}" BorderBrush="#FFC5B083" x:Name="VivodB" Foreground="#FF4F7361" FontFamily="Sitka Display"/>
+            <TextBlock TextWrapping="Wrap" Text=" C" FontFamily="Sitka Display" Foreground="#FF648274"/>
+            <TextBox TextWrapping="Wrap"  Width="120" SelectionBrush="{x:Null}" BorderBrush="#FFC5B083" x:Name="VivodC" Foreground="#FF4F7361" FontFamily="Sitka Display"/>
+        </StackPanel>
+        <TextBlock HorizontalAlignment="Left" Margin="54,353,0,0" TextWrapping="Wrap" Text="тип
+                   " VerticalAlignment="Top" FontFamily="Kozuka Mincho Pro L" Width="38" Foreground="#FF648274"/>
+
+    </Grid>
+</Window>
